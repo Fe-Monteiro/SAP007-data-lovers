@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="imagens/minilogo.png" type="image/x-icon" />
+  <title>Rick and Morty Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <section class="banner">
+      <img class="logo-rickandmorty" src="imagens/Rick-And-Morty-PNG-Free-Download.png">
+      <img class="logo-name" src="imagens/Rick-And-Morty-PNG-High-Quality-Image.png">
+      <img class="logo-eyes" src="imagens/Rick-And-Morty-PNG-Clipart.png">
+    </section>
+  </header>
+  <form class="menu-filter" id="menu">
+    <input class="search" type="search" id="character-search" placeholder=" &#128270;   Busque pelo nome do personagem...  " id="search" />
+    <select class="filter" id="species-filter">
+      <option id="Espécie" selected disabled hidden>Espécie</option>
+      <option value="Alien">&#128125; Alien</option>
+      <option value="Animal">&#128054; Animal</option>
+      <option value="Cronenberg">&#128121; Cronenberg</option>
+      <option value="unknown">&#128101; Desconhecido</option>
+      <option value="Disease">&#129440; Doença</option>
+      <option value="Human">&#129485; Humano</option>
+      <option value="Humanoid">&#129503; Humanóide</option>
+      <option value="Mytholog">&#127993; Mitologia</option>
+      <option value="Parasite">&#128027; Parasita</option>
+      <option value="Poopybutthole">&#128169; Poopybutthole</option>
+      <option value="Robot">&#129302; Robô</option>
+      <option value="Vampire">&#129499; Vampiro</option>
+    </select>
+    <select class="filter" id="gender-filter">
+      <option id="Gênero" selected disabled hidden>Gênero</option>
+      <option value="unknown">&#128101; Desconhecido</option>
+      <option value="Female">&#128103;&#127997; Feminino</option>
+      <option value="Male">&#128102;&#127995; Masculino</option>
+      <option value="Genderless">&#128100; Sem Gênero</option>
+    </select>
+    <select class="filter" id="status-filter">
+      <option id="Status" selected disabled hidden>Status</option>
+      <option value="unknown">&#128101; Desconhecido</option>
+      <option value="Dead">&#128128; Morto</option>
+      <option value="Alive">&#128147; Vivo</option>
+    </select>
+    <select class="filter" id="alphabetical-order">
+      <option id="Ordem" selected disabled hidden>Ordem</option>
+      <option value="AZ">&#8635; A-Z</option>
+      <option value="ZA">&#8634; Z-A</option>
+    </select>
+    <button class="clear" id="clear-filters" type="reset">Limpar Filtros</button>
+  </form>
+  <section class="percentage">
+    <div class="filter-compatible-calculation" id="filter-compatible-calculation"></div>
+  </section>
+  <main>
+    <section>
+      <div class="cards-container" id="cards-container"></div>
+    </section>
+  </main>
+  <script src="main.js" type="module"></script>
+  <footer class="footer">
+    <p>Desenvolvido por</p>
+    <p><a style="color: black" href="https://github.com/Fe-Monteiro" target="_blanck">Fernanda Monteiro</a></p>
+  </footer>
+</body>
+
 </html>
