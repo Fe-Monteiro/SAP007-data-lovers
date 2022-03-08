@@ -3,13 +3,20 @@ import { searchName, filterSpecies, filterGender, filterStatus, alphabeticalOrde
 import data from './data/rickandmorty/rickandmorty.js';
 
 const personsInfo = data.results;
+const searchNamePersona = document.getElementById("character-search");
 const selectSpecies = document.getElementById("species-filter");
 const selectGender = document.getElementById("gender-filter");
 const selectStatus = document.getElementById("status-filter");
 const selectOrder = document.getElementById("alphabetical-order");
-const searchNamePersona = document.getElementById("character-search");
-const showFilterPercentage = document.getElementById("filter-compatible-calculation");
 const selectButtonClearFilters = document.getElementById("clear-filters");
+const showFilterPercentage = document.getElementById("filter-compatible-calculation");
+
+searchNamePersona.addEventListener("keyup", searchByName);
+selectSpecies.addEventListener("change", showResultOfSpeciesFilter);
+selectGender.addEventListener("change", showResultOfGenderFilter);
+selectStatus.addEventListener("change", showResultOfStatusFilter);
+selectOrder.addEventListener("change", showAlphabeticalOrder);
+selectButtonClearFilters.addEventListener("click", clearFilters);
 
 function printCards(data) {
   document.getElementById("cards-container").innerHTML = data.map((item) =>
@@ -29,45 +36,43 @@ function printCards(data) {
 }
 printCards(personsInfo);
 
-function showPercentage(data) {
-  showFilterPercentage.innerHTML = `Essa categoria representa ${data}`;
+function showPercentage(personsInfo, selectedFilter) {
+  let result = calculatePercentage(personsInfo, selectedFilter)
+  showFilterPercentage.innerHTML = "Existem " + selectedFilter.length + " personagens deste filtro e representam " + result + "% do total de personagens."
 }
 
 function searchByName(event) {
   const personaName = searchName(personsInfo, event.target.value);
-  return printCards(personaName);
+  printCards(personaName);
+  showPercentage(personsInfo, personaName);
 }
-searchNamePersona.addEventListener("keyup", searchByName);
 
-function showResultOfSpeciesFilter(event) {
-  const resultSpecies = filterSpecies(personsInfo, event.target.value);
-  const speciesPercentage = `${calculatePercentage(personsInfo.length, resultSpecies.length)}% dos personagens da série Rick and Morty.`;
-  showPercentage(speciesPercentage);
-  return printCards(resultSpecies);
+function showResultOfSpeciesFilter() {
+  const valueSpeciesSelected = selectSpecies.value;
+  const selectedSpecies = filterSpecies(personsInfo, valueSpeciesSelected);
+  printCards(selectedSpecies);
+  showPercentage(personsInfo, selectedSpecies);
 }
-selectSpecies.addEventListener("change", showResultOfSpeciesFilter);
 
-function showResultOfGenderFilter(event) {
-  const resultGender = filterGender(personsInfo, event.target.value);
-  const genderPercentage = `${calculatePercentage(personsInfo.length, resultGender.length)}% dos personagens da série Rick and Morty.`;
-  showPercentage(genderPercentage);
-  return printCards(resultGender);
+function showResultOfGenderFilter() {
+  const valueGenderSelected = selectGender.value;
+  const selectedGender = filterGender(personsInfo, valueGenderSelected);
+  printCards(selectedGender);
+  showPercentage(personsInfo, selectedGender);
 }
-selectGender.addEventListener("change", showResultOfGenderFilter);
 
-function showResultOfStatusFilter(event) {
-  const resultStatus = filterStatus(personsInfo, event.target.value);
-  const statusPercentage = `${calculatePercentage(personsInfo.length, resultStatus.length)}% dos personagens da série Rick and Morty.`;
-  showPercentage(statusPercentage);
-  return printCards(resultStatus);
+function showResultOfStatusFilter() {
+  const valueStatusSelected = selectStatus.value;
+  const selectedStatus = filterStatus(personsInfo, valueStatusSelected);
+  printCards(selectedStatus);
+  showPercentage(personsInfo, selectedStatus);
 }
-selectStatus.addEventListener("change", showResultOfStatusFilter);
 
 function showAlphabeticalOrder(event) {
   const order = alphabeticalOrder(personsInfo, event.target.value);
-  return printCards(order);
+  printCards(order);
+  showPercentage(personsInfo, order);
 }
-selectOrder.addEventListener("change", showAlphabeticalOrder);
 
 function clearFilters(event) {
   event.preventDefault();
@@ -79,28 +84,3 @@ function clearFilters(event) {
   searchNamePersona.value = "";
   showFilterPercentage.innerHTML = "";
 }
-selectButtonClearFilters.addEventListener("click", clearFilters);
-
-
-// function printButtonSpecies(personsInfo, speciesHtml) {
-//   let filterConcat = [];
-//   const speciesType = personsInfo.map(({species}) => (species))
-
-//     speciesType.forEach(function(typeValueOf) {
-//       filterConcat = filterConcat.concat(typeValueOf);
-//     })
-
-//     const filters = [...new Set(filterConcat)]
-
-//     filters.forEach(function(newFilters){
-//       speciesHtml.insertAdjacentHTML( `<option value="${newFilters}" class="species-filter">${newFilters.charAt(0).toUpperCase() + (newFilters.slice(1, newFilters.length))}</option>`)
-//     })
-//  }
-//  printButtonSpecies(personsInfo);
-
-// function printButtonSpecies(data){
-//   let species = personsInfo.map((item) => (item.species))
-//   const uniqueSpecies = [...new Set(species)]
-
-//   uniqueSpecies.forEach(function())
-// }
