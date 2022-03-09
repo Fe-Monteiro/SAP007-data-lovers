@@ -29,7 +29,7 @@ function printCards(data) {
           <p><strong>Status: </strong>${item.status}</p>
           <p><strong>Origem: </strong>${item.origin.name}</p>
           <p><strong>Localização: </strong>${item.location.name}</p>
-          <p><strong>Número de episódios em que aparece: </strong>${item.episode.length}</p>
+          <p><strong>Episódio(s) em que aparece: </strong>${item.episode.map((i) => i.replaceAll(/[^0-9$]/g, " "))}.</p>
         </div>
       </section>
 ` ).join('');

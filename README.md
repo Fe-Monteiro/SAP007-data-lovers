@@ -22,13 +22,15 @@ O projeto foi desenvolvido por mim _Fernanda Monteiro_, sendo o segundo projeto 
 
 ## 4. Protótipo de baixa fidelidade.
 
-Foi esboçado um projeto em folha de papel, visando um site limpo e de fácil entendimento para o usuário.
+Foi esboçado um projeto em folha de papel, visando um site limpo e de fácil entendimento para o usuário. Foi modificada várias coisas, no começo iria fazer botões com cada espécie e etc... Porém, conforme pesquisa de usuário, verifiquei que seria melhor criar os botões com as opções suspensas.
+
+<img src="protótipoBaixa.jpg">
 
 ## 4. Protótipo de baixa fidelidade.
 
 O protótipo de alta fidelidade foi a princípio desenvolvido na ferramenta do LibreOffice Draw.
 
-<img src="protótipofidelizado.png">
+<img src="protótipoFidelizado.png">
 
 ## 5. Histórias de usuários
 

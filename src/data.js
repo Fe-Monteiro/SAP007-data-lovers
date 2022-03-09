@@ -27,7 +27,7 @@ export const alphabeticalOrder = (personsInfo, order) => {
   if (order === "AZ") {
     return personsInfo.sort((a, z) => a.name > z.name ? 1 : -1)
   } else {
-    return personsInfo.sort((a, z) => a.name > z.name ? -1 : 1)
+    return personsInfo.sort((a, z) => a.name < z.name ? 1 : -1)
   }
 };
 
