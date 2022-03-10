@@ -8,6 +8,18 @@ const characters = [
     "gender": "Male",
   },
   {
+    "name": "Antenna Rick",
+    "status": "unknown",
+    "species": "Human",
+    "gender": "Male",
+  },
+  {
+    "name": "Antenna Morty",
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Male",
+  },
+  {
     "name": "Rick Sanchez",
     "status": "Alive",
     "species": "Human",
@@ -22,31 +34,55 @@ const exampleOfNames = [
 
 const orderAZ = [
   {
+    "name": "Antenna Morty",
+    "status": "Alive",
+    "species": "Human",
     "gender": "Male",
-    "name": "Gar Gloonch",
-    "species": "Alien",
-    "status": "Dead",
   },
   {
-    "gender": "Male",
-    "name": "Rick Sanchez",
+    "name": "Antenna Rick",
+    "status": "unknown",
     "species": "Human",
+    "gender": "Male",
+  },
+  {
+    "name": "Gar Gloonch",
+    "status": "Dead",
+    "species": "Alien",
+    "gender": "Male",
+  },
+  {
+    "name": "Rick Sanchez",
     "status": "Alive",
+    "species": "Human",
+    "gender": "Male",
   }
 ]
 
 const orderZA = [
   {
-    "gender": "Male",
     "name": "Rick Sanchez",
-    "species": "Human",
     "status": "Alive",
+    "species": "Human",
+    "gender": "Male",
   },
   {
-    "gender": "Male",
     "name": "Gar Gloonch",
-    "species": "Alien",
     "status": "Dead",
+    "species": "Alien",
+    "gender": "Male",
+  },
+  {
+    "name": "Antenna Rick",
+    "status": "unknown",
+    "species": "Human",
+    "gender": "Male",
+  },
+  {
+    "name": "Antenna Morty",
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Male",
   }
 ]
 
@@ -116,8 +152,8 @@ describe('calculatePercentage', () => {
     expect(typeof calculatePercentage).toBe('function');
   });
 
-  it('It should return 50% of human characters', () => {
+  it('It should return 75% of human characters', () => {
   const expected = calculatePercentage(characters, filterSpecies(characters, "Human"))
-    expect(expected).toBe("50.00")
+    expect(expected).toBe("75.00")
   });
 });

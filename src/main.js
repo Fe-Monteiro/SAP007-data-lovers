@@ -45,6 +45,10 @@ function searchByName(event) {
   const personaName = searchName(personsInfo, event.target.value);
   printCards(personaName);
   showPercentage(personsInfo, personaName);
+  selectSpecies.options[(selectSpecies.selectedIndex = 0)];
+  selectGender.options[(selectGender.selectedIndex = 0)];
+  selectStatus.options[(selectStatus.selectedIndex = 0)];
+  selectOrder.options[(selectOrder.selectedIndex = 0)];
 }
 
 function showResultOfSpeciesFilter() {
@@ -52,6 +56,9 @@ function showResultOfSpeciesFilter() {
   const selectedSpecies = filterSpecies(personsInfo, valueSpeciesSelected);
   printCards(selectedSpecies);
   showPercentage(personsInfo, selectedSpecies);
+  selectGender.options[(selectGender.selectedIndex = 0)];
+  selectStatus.options[(selectStatus.selectedIndex = 0)];
+  selectOrder.options[(selectOrder.selectedIndex = 0)];
 }
 
 function showResultOfGenderFilter() {
@@ -59,6 +66,9 @@ function showResultOfGenderFilter() {
   const selectedGender = filterGender(personsInfo, valueGenderSelected);
   printCards(selectedGender);
   showPercentage(personsInfo, selectedGender);
+  selectSpecies.options[(selectSpecies.selectedIndex = 0)];
+  selectStatus.options[(selectStatus.selectedIndex = 0)];
+  selectOrder.options[(selectOrder.selectedIndex = 0)];
 }
 
 function showResultOfStatusFilter() {
@@ -66,12 +76,18 @@ function showResultOfStatusFilter() {
   const selectedStatus = filterStatus(personsInfo, valueStatusSelected);
   printCards(selectedStatus);
   showPercentage(personsInfo, selectedStatus);
+  selectSpecies.options[(selectSpecies.selectedIndex = 0)];
+  selectGender.options[(selectGender.selectedIndex = 0)];
+  selectOrder.options[(selectOrder.selectedIndex = 0)];
 }
 
 function showAlphabeticalOrder(event) {
   const order = alphabeticalOrder(personsInfo, event.target.value);
   printCards(order);
   showPercentage(personsInfo, order);
+  selectSpecies.options[(selectSpecies.selectedIndex = 0)];
+  selectGender.options[(selectGender.selectedIndex = 0)];
+  selectStatus.options[(selectStatus.selectedIndex = 0)];
 }
 
 function clearFilters(event) {
