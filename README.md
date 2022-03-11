@@ -10,7 +10,7 @@ Rick é um cientista alcoólatra de 70 anos extremamente inteligente que foi mor
 
 ## 1. Resumo do projeto.
 
-**_Rick and Morty Lovers_** foi pensado e desenvolvido como uma espécie de guia para os fãs da animação. Neste site é possível encontrar os personagens da série e filtrá-los de acordo com a _specie_, _genêro_, _status_, _nome do personagem_ e até mesmo em ordem crescente e decrescente conforme a primeira letra do nome. Através da seleção desses filtros, os fãs poderam ver quais o episódios em que os personagens aparecem, assim com a imagem e as demais informações do mesmo.
+**_Rick and Morty Lovers_** foi pensado e desenvolvido como uma espécie de guia para os fãs da animação. Neste site é possível encontrar os personagens da série e filtrá-los de acordo com a _specie_, _genêro_, _status_, _nome do personagem_ e até mesmo em ordem crescente e decrescente conforme a primeira letra do nome. Através da seleção desses filtros, os fãs poderam ver quais os episódios em que os personagens aparecem, assim com a imagem e as demais informações do mesmo.
 
 ## 2. Definição do Projeto.
 
@@ -22,15 +22,15 @@ O projeto foi desenvolvido por mim [_Fernanda Monteiro_](https://github.com/Fe-M
 
 ## 4. Protótipo de baixa fidelidade.
 
-Foi esboçado um projeto em folha de papel, visando um site limpo e de fácil entendimento para o usuário. Foi modificada várias coisas, no começo iria fazer botões com cada espécie, cada status e cada gẽnero, colocaria também um vídeo no começo, no intuíto de mostrar mais sobre essa série insana, porém, conforme pesquisa de usuário, verifiquei que seria melhor criar os botões com as opções suspensas, pois deixaria mais limpo o site, e quanto ao vídeo, deixaria meu site pesado e poderia dificultar o acesso aos usuários que estivessem com uma conexção ruim de internet.
+Foi esboçado um projeto em folha de papel, visando um site limpo e de fácil entendimento para o usuário. Foi modificada várias coisas, no começo eu faria botões com cada espécie, cada status e cada gẽnero, colocaria também um vídeo no começo, no intuíto de mostrar mais sobre essa série insana, porém, conforme pesquisa de usuário, verifiquei que seria melhor criar os botões com as opções suspensas, pois deixaria mais limpo o site, e quanto ao vídeo, deixaria meu site pesado e poderia dificultar o acesso aos usuários que estivessem com uma conexção ruim de internet.
 
-<img src="protótipoBaixa.jpg">
+<img src="readme.img/protótipoBaixa.jpg">
 
 ## 5. Protótipo de alta fidelidade.
 
 O protótipo de alta fidelidade foi desenvolvido na ferramenta do LibreOffice Draw.
 
-<img src="protótipoFidelizado.png">
+<img src="readme.img/protótipoFidelizado.png">
 
 ## 6. Histórias de usuários
 

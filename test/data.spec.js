@@ -86,73 +86,73 @@ const orderZA = [
   }
 ]
 
-describe('searchName', () => {
-  it('is a function', () => {
-    expect(typeof searchName).toBe('function');
+describe("searchName", () => {
+  it("is a function", () => {
+    expect(typeof searchName).toBe("function");
   });
 
-  it('You must search for a name `searchName`', () => {
+  it("You must search for a name `searchName`", () => {
     const expected = searchName(exampleOfNames, "Rick")
     expect(expected).toEqual([{ "name": "Rick Sanchez" }])
   });
 });
 
-describe('filterSpecies', () => {
-  it('is a function', () => {
-    expect(typeof filterSpecies).toBe('function');
+describe("filterSpecies", () => {
+  it("is a function", () => {
+    expect(typeof filterSpecies).toBe("function");
   });
 
-  it('You should filter by species `filterSpecies`', () => {
+  it("You should filter by species `filterSpecies`", () => {
     const humanSpecies = "Human"
     const expected = filterSpecies(characters, humanSpecies)
     expect(expected[0].species).toEqual(humanSpecies)
   });
 });
 
-describe('filterGender', () => {
-  it('is a function', () => {
-    expect(typeof filterGender).toBe('function');
+describe("filterGender", () => {
+  it("is a function", () => {
+    expect(typeof filterGender).toBe("function");
   });
 
-  it('You should filter by gender `filterGender`', () => {
+  it("You should filter by gender `filterGender`", () => {
     const maleGender = "Male"
     const expected = filterGender(characters, maleGender)
     expect(expected[0].gender).toEqual(maleGender)
   });
 });
 
-describe('filterStatus', () => {
-  it('is a function', () => {
-    expect(typeof filterStatus).toBe('function');
+describe("filterStatus", () => {
+  it("is a function", () => {
+    expect(typeof filterStatus).toBe("function");
   });
 
-  it('You should filter by status `filterStatus`', () => {
+  it("You should filter by status `filterStatus`", () => {
     const deadStatus = "Dead"
     const expected = filterStatus(characters, deadStatus)
     expect(expected[0].status).toEqual(deadStatus)
   });
 });
 
-describe('alphabeticalOrder', () => {
-  it('is a function', () => {
-    expect(typeof alphabeticalOrder).toBe('function');
+describe("alphabeticalOrder", () => {
+  it("is a function", () => {
+    expect(typeof alphabeticalOrder).toBe("function");
   });
 
-  it('Should return sorted from A-Z', () => {
+  it("Should return sorted from A-Z", () => {
     expect(alphabeticalOrder(characters, "AZ")).toEqual(orderAZ);
   });
 
-  it('Should return sorted from Z-A', () => {
+  it("Should return sorted from Z-A", () => {
     expect(alphabeticalOrder(characters, "ZA")).toEqual(orderZA);
   });
 });
 
-describe('calculatePercentage', () => {
-  it('is a function', () => {
-    expect(typeof calculatePercentage).toBe('function');
+describe("calculatePercentage", () => {
+  it("is a function", () => {
+    expect(typeof calculatePercentage).toBe("function");
   });
 
-  it('It should return 75% of human characters', () => {
+  it("It should return 75% of human characters", () => {
   const expected = calculatePercentage(characters, filterSpecies(characters, "Human"))
     expect(expected).toBe("75.00")
   });

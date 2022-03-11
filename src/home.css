@@ -10,24 +10,22 @@ body {
 
 .man-header {
   display:flex;
-  height: 180px;
-  padding: 20px;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .title-home {
-  font-size: 40px;
-  margin: 30px;
+  font-size: 3vw;
+  margin: 2%;
   color: white;
   font-family: Verdana;
 }
 
 .logo-header {
-  width: 150px;
-  height: 150px;
+  width: 10vw;
+  height: 10vw;
 }
 
 .photos{
@@ -112,25 +110,6 @@ body {
  margin-left: -100%;
 }
 
-.navigation-auto{
-  position: absolute;
-  display: flex;
-  width: 60%;
-  margin-top: 410px;
-  justify-content: center;
-}
-
-.navigation-auto div{
-  border: 2px solid white;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 30px;
-}
-
 .photos{
   display: flex;
   margin-top: 20px;
@@ -141,6 +120,7 @@ body {
   line-height: 1.5;
   text-align: justify;
   font-size: 90%;
+  font-weight: bold;
   margin-top: -10px;
   word-break: break-word;
 }
@@ -193,4 +173,23 @@ body {
   text-align: center;
   bottom: 0;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 670px) and (max-width: 915px) {
+.man-header{
+  display:flex;
+  height: 180px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+}
+
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 670px) {
+
 }

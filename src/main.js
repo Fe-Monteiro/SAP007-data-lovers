@@ -1,6 +1,6 @@
 import { searchName, filterSpecies, filterGender, filterStatus, alphabeticalOrder, calculatePercentage } from './data.js';
 
-import data from './data/rickandmorty/rickandmorty.js';
+import data from "./data/rickandmorty/rickandmorty.js";
 
 const personsInfo = data.results;
 const searchNamePersona = document.getElementById("character-search");

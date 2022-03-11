@@ -78,7 +78,7 @@ body {
   margin-bottom: 10px;
   text-align: center;
   box-sizing: border-box;
-  font-family: 'Times New Roman', cursiva;
+  font-family: "Times New Roman", cursiva;
   font-size: 20px;
   cursor: pointer;
   box-shadow: 0 0 8px 0 rgba(69, 255, 23, 0.589);
@@ -93,7 +93,7 @@ body {
   font-size: 20px;
   text-align: center;
   cursor: pointer;
-  font-family: 'Times New Roman', cursiva;
+  font-family: "Times New Roman", cursiva;
   box-shadow: 0 0 8px 0 rgba(133, 16, 115, 0.589);
 }
 
@@ -148,7 +148,7 @@ body {
   background: DarkOliveGreen;
   font-size: 20px;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   bottom: 0;
   flex-wrap: wrap;
