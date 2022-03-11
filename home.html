@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/minilogo.png" type="image/x-icon" />
+  <title>Rick and Morty Lovers Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+  <header>
+    <div class="man-header">
+      <div class="logo"><img class="logo-header" src="imagens/Rick-And-Morty-PNG-Image.png"></div>
+      <div class="title-home">Rick and Morty Lovers</div>
+    </div>
+  </header>
+  <section class="photos">
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+
+        <div class="slide first"><img src="./imagens/slide1.jpg"></div>
+        <div class="slide"><img src="./imagens/slide2.jpg"></div>
+        <div class="slide"><img src="./imagens/slide3.jpg"></div>
+        <div class="slide"><img src="./imagens/slide4.jpg"></div>
+        <div class="slide"><img src="./imagens/slide5.jpg"></div>
+        <div class="slide"><img src="./imagens/slide6.jpg"></div>
+      </div>
+
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <div class="info-by-side">
+      <p class="paragrafo1">Seja bem vindo(a) ao Rick and Morty Lovers!</p>
+      <p class="paragrafo2">Rick and Morty é uma série de animação adulta norte-americana de comédia e ficção
+        científica criada por Justin Roiland e Dan Harmon para o bloco de programação noturno Adult Swim, exibido no
+        canal Cartoon Network.
+        É uma das animações mais insanas e viciantes produzidas até hoje.
+        Rick é um cientista alcoólatra de 70 anos extremamente inteligente que foi morar com a família de sua filha
+        Beth, uma cirurgiã cardíaca de equinos. Ele está sempre em busca de grandes experiências e divide seu tempo
+        entre desenvolver projetos altamente tecnológicos em seu laboratório (garagem da casa da Beth), e em levar seu
+        neto de 14 anos Morty em aventuras perigosas e surreais, indo parar até em diversas dimensões e realidades
+        paralelas. Ele é bem esquentado e sempre sobra para seu neto, Morty, que o acompanha nessas expedições.
+      </p>
+      <nav class="nav-menu">
+        <button class="initial-button" onclick="window.location.href='./index.html'">Personagens</button>
+      </nav>
+    </div>
+  </section>
+  <script src="home.js" type="module"></script>
+  <footer class="footer">
+    <p>Desenvolvido por <a style="color: black" href="https://github.com/Fe-Monteiro" target="_blanck">Fernanda
+        Monteiro</a></p>
+    <p>SAP007 - Laboratória</p>
+  </footer>
+</body>
+
+</html>
