@@ -41,7 +41,7 @@ body {
   overflow: hidden;
 }
 
-.slides{
+.slides {
   width: 500%;
   height: 500px;
   display: flex;
@@ -115,6 +115,15 @@ body {
   margin-top: 20px;
 }
 
+.info-text{
+  color: white;
+  margin-left: 20px;
+  border-radius: 10px;
+  height: 450px;
+  width: 463px;
+  margin-bottom: 20px;
+}
+
 .paragrafo1, .paragrafo2{
   padding: 15px;
   line-height: 1.5;
@@ -123,10 +132,6 @@ body {
   font-weight: bold;
   margin-top: -10px;
   word-break: break-word;
-}
-
-.text-container{
-  margin: auto;
 }
 
 .nav-menu{
@@ -154,15 +159,6 @@ body {
   transform: scale(1.05);
 }
 
-.info-by-side{
-  color: white;
-  margin-left: 20px;
-  border-radius: 10px;
-  height: 450px;
-  width: 463px;
-  margin-bottom: 20px;
-}
-
 .footer {
   height: 55px;
   padding: 5px;
@@ -175,7 +171,7 @@ body {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 670px) and (max-width: 915px) {
+@media screen and (min-width: 800px) and (max-width: 1280px) {
 .man-header{
   display:flex;
   height: 180px;
@@ -185,10 +181,52 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.photos{
+  display: block;
+  margin-top: 20px;
+}
+
+.slider {
+  margin: auto;
+  width: 700px;
+  height: 450px;
+  border-radius: 3%;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+  position: relative;
+}
+
+.slide img{
+  width: 800px;
+  height: 450px;
+}
+
+.navigation-manual{
+  width: 80%;
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+}
+
+.info-text {
+  position: relative;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
 }
 
 
 }
+
+
+
 
 @media screen and (min-width: 200px) and (max-width: 670px) {
 
