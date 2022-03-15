@@ -4,10 +4,10 @@
 
 - [1. Resumo do Projeto](#1-resumo-do-projeto)
 - [2. Definição do Projeto](#2-definição-do-projeto)
-- [3. Planjamento e Organização](#3-planejamento-e-organização)
+- [3. Planejamento e Organização](#3-planejamento-e-organização)
 - [4. Protótipo de baixa fidelidade](#4-protótipo-de-baixa-fidelidade)
-- [5. Protótipo de alta fidelidade](#5-protótipo-de-baixa-fidelidade)
-- [6. Histórias de Usuários](#6-histórias-de-usuários)
+- [5. Protótipo de alta fidelidade](#5-protótipo-de-alta-fidelidade)
+- [6. Histórias de usuários](#6-histórias-de-usuários)
 - [7. Teste de Usabilidade](#7-teste-de-usabilidade)
 - [8. Tecnologias Utilizadas](#8-tecnologias-utilizadas)
 - [9. Considerações](#9-considerações)
@@ -44,7 +44,7 @@ O protótipo de alta fidelidade foi desenvolvido na ferramenta do LibreOffice Dr
 
 <img src="readme.img/protótipoFidelizado.png">
 
-## 6. Histórias de usuários
+## 6. Histórias de usuários.
 
 1. "O usuário que está assistindo a série, gostaria de saber mais sobre os personagens, e em quais episódios eles aparecem, para que assim possam escolher melhor quais episódios assistirem".
 
@@ -75,7 +75,7 @@ O protótipo de alta fidelidade foi desenvolvido na ferramenta do LibreOffice Dr
 - [x] Subir pro github.
 - [x] Sem conflitos/bugs.
 
-## 7. Testes de usabilidade:
+## 7. Testes de usabilidade.
 Foram realizados testes de usabilidades com pessoas de diferentes faixas etárias:
 
 ***Usuários adultos na faixa de idade de 30-40 anos:***
@@ -92,7 +92,7 @@ Solução: Retirei o botão de filtrar, que deveria recarregar o filtro selecion
 
 Solução: Coloquei as principais informações na frente do card junto com o nome e a imagem.
 
-## 8. Tecnologias Utilizadas
+## 8. Tecnologias Utilizadas.
 - HTML 5
 - CSS3
 - JavaScript Vanilla
@@ -102,7 +102,7 @@ Solução: Coloquei as principais informações na frente do card junto com o no
 - GitHUb Pages
 - Jest
 
-## 9. Considerações
+## 9. Considerações.
 
 Rick and Morty Lovers foi desenvolvido por mim, _Fernanda Monteiro_ aluna da turma SAP007 da <Laboratória>&#128155;.
 
