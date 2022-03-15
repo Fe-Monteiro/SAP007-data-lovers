@@ -171,63 +171,113 @@ body {
   flex-wrap: wrap;
 }
 
+.footer p a {
+  color: black;
+}
+
 @media screen and (min-width: 800px) and (max-width: 1280px) {
-.man-header{
-  display:flex;
-  height: 180px;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  .man-header{
+    display:flex;
+    height: 180px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .photos{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .slider {
+    margin: auto;
+    width: 700px;
+    height: 450px;
+    border-radius: 3%;
+    overflow: hidden;
+  }
+
+  .slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+    position: relative;
+  }
+
+  .slide img{
+    width: 800px;
+    height: 450px;
+  }
+
+  .navigation-manual{
+    width: 80%;
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-text {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
-
-.photos{
-  display: block;
-  margin-top: 20px;
-}
-
-.slider {
-  margin: auto;
-  width: 700px;
-  height: 450px;
-  border-radius: 3%;
-  overflow: hidden;
-}
-
-.slides {
-  width: 500%;
-  height: 500px;
-  display: flex;
-  position: relative;
-}
-
-.slide img{
-  width: 800px;
-  height: 450px;
-}
-
-.navigation-manual{
-  width: 80%;
-  margin-top: -90px;
-  display: flex;
-  justify-content: center;
-}
-
-.info-text {
-  position: relative;
-  color: white;
-  margin-top: 5%;
-  margin-bottom: 5%;
-
-}
-
-
-}
-
-
-
 
 @media screen and (min-width: 200px) and (max-width: 670px) {
+  .title-home {
+    font-size: 6vw;
+    margin: 2%;
+    color: white;
+    font-family: Verdana;
+  }
+
+  .photos{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .slider {
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 3%;
+    overflow: hidden;
+  }
+
+  .slides {
+    height: auto;
+    display: flex;
+    position: relative;
+  }
+
+  .slide img{
+    width: 350px;
+    height: 350px;
+  }
+
+  .navigation-manual{
+    width: 80%;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: auto;
+    position: relative;
+
+    /* position: relative;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%; */
+  }
 
 }

@@ -19,12 +19,15 @@ export const filterStatus = (personsInfo, status) => {
 };
 
 export const alphabeticalOrder = (personsInfo, order) => {
+  const copyPersonsInfo = [...personsInfo];
   if (order === "AZ") {
-    return personsInfo.sort((a, z) => a.name > z.name ? 1 : -1)
+    return copyPersonsInfo.sort((a, z) => a.name > z.name ? 1 : -1)
   } else {
-    return personsInfo.sort((a, z) => a.name < z.name ? 1 : -1)
+    return copyPersonsInfo.sort((a, z) => a.name < z.name ? 1 : -1)
   }
 };
 
-export const calculatePercentage = (personsInfo, selectedFilter) =>
-  Number.parseFloat((selectedFilter.length * 100) / personsInfo.length).toFixed(2);
+export const calculatePercentage = (personsInfo, selectedFilter) => {
+  const resultPercentage = parseFloat((selectedFilter.length * 100) / personsInfo.length).toFixed(2);
+  return resultPercentage;
+};

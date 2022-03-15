@@ -1,5 +1,17 @@
 # Rick and Morty Lovers
 
+## Índice
+
+- [1. Resumo do Projeto](#1-resumo-do-projeto)
+- [2. Definição do Projeto](#2-definição-do-projeto)
+- [3. Planjamento e Organização](#3-planejamento-e-organização)
+- [4. Protótipo de baixa fidelidade](#4-protótipo-de-baixa-fidelidade)
+- [5. Protótipo de alta fidelidade](#5-protótipo-de-baixa-fidelidade)
+- [6. Histórias de Usuários](#6-histórias-de-usuários)
+- [7. Teste de Usabilidade](#7-teste-de-usabilidade)
+- [8. Tecnologias Utilizadas](#8-tecnologias-utilizadas)
+- [9. Considerações](#9-considerações)
+
 ## Sobre Rick and Morty
 
 [Rick and Morty](https://pt.wikipedia.org/wiki/Rick_and_Morty) é uma série de animação adulta norte-americana de comédia e ficção científica criada por Justin Roiland e Dan Harmon para o bloco de programação noturno Adult Swim, exibido no canal Cartoon Network.
@@ -10,7 +22,7 @@ Rick é um cientista alcoólatra de 70 anos extremamente inteligente que foi mor
 
 ## 1. Resumo do projeto.
 
-**_Rick and Morty Lovers_** foi pensado e desenvolvido como uma espécie de guia para os fãs da animação. Neste site é possível encontrar os personagens da série e filtrá-los de acordo com a _specie_, _genêro_, _status_, _nome do personagem_ e até mesmo em ordem crescente e decrescente conforme a primeira letra do nome. Através da seleção desses filtros, os fãs poderam ver quais os episódios em que os personagens aparecem, assim com a imagem e as demais informações do mesmo.
+**_Rick and Morty Lovers_** foi pensado e desenvolvido como uma espécie de guia para os fãs da animação. Neste site é possível encontrar os personagens da série e filtrá-los de acordo com a _specie_, _genêro_, _status_, _nome do personagem_ e até mesmo em ordem crescente e decrescente conforme a primeira letra do nome. Através da seleção desses filtros, os fãs poderam ver quais os episódios em que os personagens aparecem, assim como a imagem e as demais informações do mesmo.
 
 ## 2. Definição do Projeto.
 
@@ -34,30 +46,34 @@ O protótipo de alta fidelidade foi desenvolvido na ferramenta do LibreOffice Dr
 
 ## 6. Histórias de usuários
 
-1. "O usuário que está assistindo a série, gostaria de saber mais sobre os personagens, em quais episódios eles aparecem, para que assim possam escolher melhor quais episódios assistirem".
+1. "O usuário que está assistindo a série, gostaria de saber mais sobre os personagens, e em quais episódios eles aparecem, para que assim possam escolher melhor quais episódios assistirem".
 
 #### Critérios de aceitação:
-- [x] O usuário consegue filtrar por spécie, gênero e status.
-- [x] O usuário consegue ordenar para ver os personagens em ordem crescente e decrescente.
 - [x] Ver os personagens em cards.
+- [x] Ver as informações de cada personagem assim como os episódios em que aparecem.
+
+2. "O usuário deseja ver em cards o(s) personagem(ns) conforme a sua espécie, gênero, ou status".
+
+#### Critérios de aceitação:
+- [x] O usuário consegue filtrar por espécie, gênero e status.
+
+3. "O usuário quer ver na tela o card com a imagem e as informações do(s) personagem(ns) conforme digita o nome do personagem e também em ordem crescente e decrescente".
+
+#### Critérios de aceitação:
 - [x] O usuário pode pesquisar personagens por nome e ver os cards com as informações do personagem.
+- [x] O usuário consegue ordenar para ver os personagens em ordem crescente e decrescente.
+
+4. "O usuário quer ver na tela a informação de quantos personagens representa determinado filtro e a sua porcentagem em relação ao total de personagens da série".
+
+#### Critérios de aceitação:
 - [x] O usuário consegue ver uma curiosidade conforme o filtro realizado, mostrando o total dos personagens e a média que representa determinado filtro.
 
 #### Definição de pronto:
-
-- [x] Passar nos testes
+- [x] Passar em 100% nos testes.
 - [x] Padrão de código: ";" ao final da linha de código e aspas duplas.
-- [x] Sem comentários
-- [x] Subir pro github
-- [x] Sem conflitos/bugs
-
-2. "O usuário quer ver na tela a imagem e as informações do(s) personagem(ns) conforme escolha do filtro".
-
-#### Critérios de aceitação:
-- [x] O usuário conseguirá ver o card na tela com a imagem do personagem e as informações dele.
-
-3. "O usuário poderá pesquisar os personagens pelo nome".
-- [x] O usuário conseguirá pesquisar personagens por nome e ver os cards com as informações do(s) personagem(ns).
+- [x] Sem comentários.
+- [x] Subir pro github.
+- [x] Sem conflitos/bugs.
 
 ## 7. Testes de usabilidade:
 Foram realizados testes de usabilidades com pessoas de diferentes faixas etárias:
@@ -86,9 +102,7 @@ Solução: Coloquei as principais informações na frente do card junto com o no
 - GitHUb Pages
 - Jest
 
-## 9. Resultado
-
-## 10. Considerações
+## 9. Considerações
 
 Rick and Morty Lovers foi desenvolvido por mim, _Fernanda Monteiro_ aluna da turma SAP007 da <Laboratória>&#128155;.
 

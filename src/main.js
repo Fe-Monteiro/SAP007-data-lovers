@@ -37,7 +37,7 @@ function printCards(data) {
 printCards(personsInfo);
 
 function showPercentage(personsInfo, selectedFilter) {
-  let result = calculatePercentage(personsInfo, selectedFilter)
+  const result = calculatePercentage(personsInfo, selectedFilter)
   showFilterPercentage.innerHTML = "Existem " + selectedFilter.length + " personagens deste filtro e representam " + result + "% do total de personagens."
 }
 
