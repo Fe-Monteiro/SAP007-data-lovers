@@ -8,7 +8,7 @@
 - [4. Protótipo de baixa fidelidade](#4-protótipo-de-baixa-fidelidade)
 - [5. Protótipo de alta fidelidade](#5-protótipo-de-alta-fidelidade)
 - [6. Histórias de usuários](#6-histórias-de-usuários)
-- [7. Teste de Usabilidade](#7-teste-de-usabilidade)
+- [7. Testes de Usabilidade](#7-testes-de-usabilidade)
 - [8. Tecnologias Utilizadas](#8-tecnologias-utilizadas)
 - [9. Considerações](#9-considerações)
 
@@ -46,24 +46,24 @@ O protótipo de alta fidelidade foi desenvolvido na ferramenta do LibreOffice Dr
 
 ## 6. Histórias de usuários.
 
-1. "O usuário que está assistindo a série, gostaria de saber mais sobre os personagens, e em quais episódios eles aparecem, para que assim possam escolher melhor quais episódios assistirem".
+**1**. "O usuário que está assistindo a série, gostaria de saber mais sobre os personagens, e em quais episódios eles aparecem, para que assim possam escolher melhor quais episódios assistirem".
 
 #### Critérios de aceitação:
 - [x] Ver os personagens em cards.
 - [x] Ver as informações de cada personagem assim como os episódios em que aparecem.
 
-2. "O usuário deseja ver em cards o(s) personagem(ns) conforme a sua espécie, gênero, ou status".
+**2**. "O usuário deseja ver em cards o(s) personagem(ns) conforme a sua espécie, gênero, ou status".
 
 #### Critérios de aceitação:
 - [x] O usuário consegue filtrar por espécie, gênero e status.
 
-3. "O usuário quer ver na tela o card com a imagem e as informações do(s) personagem(ns) conforme digita o nome do personagem e também em ordem crescente e decrescente".
+**3**. "O usuário quer ver na tela o card com a imagem e as informações do(s) personagem(ns) conforme digita o nome do personagem e também em ordem crescente e decrescente".
 
 #### Critérios de aceitação:
-- [x] O usuário pode pesquisar personagens por nome e ver os cards com as informações do personagem.
+- [x] O usuário pode pesquisar personagens por nome e ver os cards com as informações do mesmo.
 - [x] O usuário consegue ordenar para ver os personagens em ordem crescente e decrescente.
 
-4. "O usuário quer ver na tela a informação de quantos personagens representa determinado filtro e a sua porcentagem em relação ao total de personagens da série".
+**4**. "O usuário quer ver na tela a informação de quantos personagens representa determinado filtro e a sua porcentagem em relação ao total de personagens da série".
 
 #### Critérios de aceitação:
 - [x] O usuário consegue ver uma curiosidade conforme o filtro realizado, mostrando o total dos personagens e a média que representa determinado filtro.
